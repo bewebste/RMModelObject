@@ -25,6 +25,10 @@
 
 #import <Foundation/NSObject.h>
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+	
 //***************************************************************************
 
 /** See http://developer.apple.com/documentation/Cocoa/Conceptual/ModelObjects/ */
@@ -56,3 +60,6 @@
 Class RMModelObjectInitializeDynamicClass(Class mainClass);
 
 //***************************************************************************
+#ifdef __cplusplus
+}
+#endif
