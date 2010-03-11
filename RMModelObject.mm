@@ -930,8 +930,8 @@ static id CopyObjectInto(id self, id copiedObject, NSZone* zone, const BOOL muta
 			
 			if([dictionary objectForKey:ivarNameString])
 			{
-				id object = [dictionary objectForKey:ivarNameString];
-				[self setValue:object forKey:ivarNameString];
+				id value = [dictionary objectForKey:ivarNameString];
+				[self setValue:value forKey:ivarNameString];
 			}
 		}
 	}
